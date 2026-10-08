@@ -321,3 +321,22 @@ The Home page displays fictional developer posts featuring real GitHub repositor
 The Trending page displays popular GitHub repositories retrieved using the GitHub REST API. Users can search, filter by programming language, sort repositories, and save projects.
 
 ![Otupus Trending Page Wireframe](docs/wireframes/trending.png)
+
+## 6 Backend and system architecture
+
+For this project, the code architecture will be split into 3 main parts:
+
+Frontend:
+Axios: API controller for frontend
+React framework for building UI blocks
+
+Backend: Follow the backend structure of the ASP.NET Core system design
+
+Database:
+SQLite: for basic user and system data
+Redis: A caching server for saving API tokens and optimizing the system speed.
+
+Infrastructure System Diagram
+
+![System](docs\uml\OT-DevPost.drawio.png)
+Those architectures will be hosted on DockerHub for the development process and will be hosted on a cloud service (AWS) or a hosting service (Vercel)
